@@ -5,6 +5,8 @@
 
 .max-width-100[![Git Logo](images/git-logo.png)]
 
+[janka102.github.io/dvchacks2019-intro-git/](janka102.github.io/dvchacks2019-intro-git/)
+
 ???
 Welcome to the "Introduction to Git" workshop
 
@@ -144,3 +146,105 @@ Then `cd my-project`
 
 Let's get our hands dirty with some Git!
 
+1. Create a new repo on GitHub
+
+  ![New Repo](images/new-repo.png)
+
+---
+
+# Using Git for real
+
+Name the repo  
+Make sure to keep "Initialize this repository with a README" **unchecked**
+
+![Name Repo](images/name-repo.png)
+
+---
+
+# Using Git for real
+
+There will be **Quick setup** instructions.
+
+We will use this part:
+
+![Existing Repo](images/existing-repo.png)
+
+2. Create a new folder (`mkdir dvchacks-intro-git` in the terminal)
+3. Make a file called `README.md` and put this in there
+  ```
+  # DVCHacks 2019 Intro to Git
+  ```
+
+---
+
+# Using Git for real
+
+Let's finally run some Git commands! *Don't type the $*
+
+```
+$ git init
+Initialized empty Git repository in /home/janka102/Projects/dvchacks-intro-git/.git/
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add README.md 
+
+$ git commit -m "Added README"
+[master (root-commit) 031998c] Added README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+ ```
+
+---
+
+# Using Git for real
+
+Let's finally run some Git commands! *Don't type the $*
+
+Now we have the new file committed locally and need to push it to GitHub  
+Copy and paste from GitHub:
+
+```
+$ git remote add origin git@github.com:janka102/dvchacks-intro-git.git
+
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 248 bytes | 248.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:janka102/dvchacks-intro-git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
+
+---
+
+# Adding our own code
+
+Download this file and extract it [http://bit.ly/dvchacksIntroGit](http://bit.ly/dvchacksIntroGit)
+
+```
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+	main.css
+	main.js
+	skeleton.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
