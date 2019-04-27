@@ -286,3 +286,39 @@ To github.com:janka102/dvchacks-intro-git.git
  * [new branch]      add-files -> add-files
 Branch 'add-files' set up to track remote branch 'add-files' from 'origin'.
 ```
+
+---
+
+# Adding our own code
+
+```
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+$ git merge add-files
+Updating 031998c..77fd2aa
+Fast-forward
+ index.html   |  48 ++++++++++
+ main.css     |  64 ++++++++++++++
+ main.js      |  72 +++++++++++++++
+ skeleton.css | 418 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 602 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 main.css
+ create mode 100644 main.js
+ create mode 100644 skeleton.css
+
+$ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:janka102/dvchacks-intro-git.git
+   031998c..77fd2aa  master -> master
+```
+
+---
+
+# Preview our code
+
+1. In GitHub copy link to index.html (https://github.com/janka102/dvchacks-intro-git/blob/master/index.html)
+2. Open [https://htmlpreview.github.io/](https://htmlpreview.github.io/)
+3. Paste in link and click Preview
