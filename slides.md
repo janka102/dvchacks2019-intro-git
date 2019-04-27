@@ -1,5 +1,8 @@
 # Introduction to Git
 
+<br>
+<br>
+
 .max-width-100[![Git Logo](images/git-logo.png)]
 
 ???
@@ -129,3 +132,9 @@ Start out by cloning a repo: `git clone https://github.com/me/my-project.git`. T
 5. **Pull in case someone else made changes**: `git pull`
 6. Merge your changes into master: `git merge develop`
 7. Repeat 1-7
+
+---
+
+# The Git workflow
+
+.max-width-100[![Git Workflow](images/gitflow.png)]
