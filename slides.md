@@ -48,43 +48,6 @@ Ok, let's talk about Git...
 
 ---
 
-# Getting Git
-### [https://git-scm.com/download](https://git-scm.com/download)
-
-**Windows**
-
-[Click here for easiest way to install Git on Windows](https://git-scm.com/download/win)
-
-**macOS**
-
-If you know you have homebrew, then it should be already installed  
-Otherwise, [click here to download](https://git-scm.com/download/mac)
-
-**Linux**
-
-[Check here on how to do that for your distribution](https://git-scm.com/download/linux)
-
----
-
-
-Once Git is  installed, test it by opening a terminal (or GitBash on Windows) and type
-
-```sh
-git --version
-```
-
-There shouldn't by any issues.
-
-<hr>
-
-# GitHub.com
-
-Next up is getting an account on [GitHub](https://github.com).
-
-GitHub is a popular hosting site for Git repositories.
-
----
-
 # Who actually uses Git?
 
 Sure it sounds cool, but is it really going to be useful?
@@ -106,6 +69,7 @@ Git is all around you, you can't get away!
 
 # Git terminology
 
+.definitions[
 - *repository*: a project folder that has Git enabled
 - *clone*: download a repository
 - *branch*: separate version of code used to work on features
@@ -113,15 +77,49 @@ Git is all around you, you can't get away!
 - *remote*: website to store the changes
 - *push*: send changes to a remote
 - *pull*: get changes from a remote
+]
 
 ???
 Let's get more familiar with Git
 
 ---
 
+# Getting Git
+### [https://git-scm.com/download](https://git-scm.com/download)
+
+**Windows**
+
+[Click here for easiest way to install Git on Windows](https://git-scm.com/download/win)
+
+**macOS**
+
+If you know you have homebrew, then it should be already installed  
+Otherwise, [click here to download](https://git-scm.com/download/mac)
+
+**Linux**
+
+[Check here on how to do that for your distribution](https://git-scm.com/download/linux)
+
+---
+
+Once Git is  installed, test it by opening a terminal (or GitBash on Windows) and type `git --version`
+
+There shouldn't be any issues.
+
+<hr>
+
+# GitHub.com
+
+Next up is getting an account on [GitHub](https://github.com/join).
+
+GitHub is a popular hosting site for Git repositories.
+
+---
+
 # The Git workflow
 
-Start out by cloning a repo: `git clone https://github.com/me/my-project.git`. Then `cd my-project`
+Start out by cloning a repo: `git clone https://github.com/me/my-project.git`  
+Then `cd my-project`
 
 1. Create a new branch: `git checkout -b branch_name`
   - *The original branch is no longer affected by any changes here*
@@ -131,10 +129,18 @@ Start out by cloning a repo: `git clone https://github.com/me/my-project.git`. T
 4. Switch back to main branch: `git checkout master`
 5. **Pull in case someone else made changes**: `git pull`
 6. Merge your changes into master: `git merge develop`
-7. Repeat 1-7
+7. Push changes to remote: `git push`
+8. Repeat 1-8
 
 ---
 
 # The Git workflow
 
 .max-width-100[![Git Workflow](images/gitflow.png)]
+
+---
+
+# Using Git for real
+
+Let's get our hands dirty with some Git!
+
