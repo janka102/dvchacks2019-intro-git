@@ -227,17 +227,24 @@ To github.com:janka102/dvchacks-intro-git.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
+Reload GitHub and it should show up
+
 ---
 
 # Adding our own code
+
+First, we need to create a new branch
+
+```
+$ git checkout -b add-files
+Switched to a new branch 'add-files'
+```
 
 Download this file and extract it [http://bit.ly/dvchacksIntroGit](http://bit.ly/dvchacksIntroGit)
 
 ```
 $ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
+On branch add-files
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
@@ -247,4 +254,35 @@ Untracked files:
 	skeleton.css
 
 nothing added to commit but untracked files present (use "git add" to track)
+```
+
+---
+
+# Adding our own code
+
+```
+$ git add .
+
+$ git commit -m "Add our files"
+[add-files 77fd2aa] Add our files
+ 4 files changed, 602 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 main.css
+ create mode 100644 main.js
+ create mode 100644 skeleton.css
+
+$ git push -u origin add-files
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 4.69 KiB | 4.69 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'add-files' on GitHub by visiting:
+remote:      https://github.com/janka102/dvchacks-intro-git/pull/new/add-files
+remote: 
+To github.com:janka102/dvchacks-intro-git.git
+ * [new branch]      add-files -> add-files
+Branch 'add-files' set up to track remote branch 'add-files' from 'origin'.
 ```
